@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="string_sout.restful_jpa.controller.UserControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-07-04T08:10:13" hostname="D0083-052" time="1.286">
+  <properties/>
+  <testcase name="updateUserSuccess()" classname="string_sout.restful_jpa.controller.UserControllerTest" time="1.286"/>
+  <system-out><![CDATA[15:10:07.713 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [string_sout.restful_jpa.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:10:07.880 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration string_sout.restful_jpa.RestfulJpaApplication for test class string_sout.restful_jpa.controller.UserControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2024-07-04T15:10:08.325+07:00  INFO 10760 --- [restful-jpa] [    Test worker] s.r.controller.UserControllerTest        : Starting UserControllerTest using Java 17.0.10 with PID 10760 (started by febykas in D:\Learn Java\restful-jpa\restful-jpa)
+2024-07-04T15:10:08.327+07:00  INFO 10760 --- [restful-jpa] [    Test worker] s.r.controller.UserControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2024-07-04T15:10:09.199+07:00  INFO 10760 --- [restful-jpa] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-04T15:10:09.276+07:00  INFO 10760 --- [restful-jpa] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interface.
+2024-07-04T15:10:09.857+07:00  INFO 10760 --- [restful-jpa] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-04T15:10:10.260+07:00  INFO 10760 --- [restful-jpa] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24197b13
+2024-07-04T15:10:10.263+07:00  INFO 10760 --- [restful-jpa] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-04T15:10:10.318+07:00  INFO 10760 --- [restful-jpa] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-04T15:10:10.408+07:00  INFO 10760 --- [restful-jpa] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-04T15:10:10.466+07:00  INFO 10760 --- [restful-jpa] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-04T15:10:10.971+07:00  INFO 10760 --- [restful-jpa] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-04T15:10:12.179+07:00  INFO 10760 --- [restful-jpa] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-04T15:10:12.182+07:00  INFO 10760 --- [restful-jpa] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-04T15:10:12.768+07:00  WARN 10760 --- [restful-jpa] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-04T15:10:13.272+07:00  INFO 10760 --- [restful-jpa] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-07-04T15:10:13.273+07:00  INFO 10760 --- [restful-jpa] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-07-04T15:10:13.277+07:00  INFO 10760 --- [restful-jpa] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-07-04T15:10:13.310+07:00  INFO 10760 --- [restful-jpa] [    Test worker] s.r.controller.UserControllerTest        : Started UserControllerTest in 5.263 seconds (process running for 6.644)
+Hibernate: 
+    select
+        u1_0.username,
+        u1_0.name,
+        u1_0.password,
+        u1_0.token,
+        u1_0.token_expired_at 
+    from
+        users u1_0
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        username=?
+Hibernate: 
+    select
+        u1_0.username,
+        u1_0.name,
+        u1_0.password,
+        u1_0.token,
+        u1_0.token_expired_at 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    insert 
+    into
+        users
+        (name, password, token, token_expired_at, username) 
+    values
+        (?, ?, ?, ?, ?)
+{"username":"test","name":"Test","password":"$2a$10$zqzygLYeqb0TUgLK0WjdyOV5PNLwtXy1QO8iiAeNsMYaiwbzqBozK","token":"test","tokenExpiredAt":1820080614172,"contacts":null}
+{"name":"Febyk","password":"qwerty"}
+2024-07-04T15:10:14.310+07:00  INFO 10760 --- [restful-jpa] [    Test worker] s.r.resolver.UserArgumentResolver        : UserArgumentResolver resolveArgument
+Hibernate: 
+    select
+        u1_0.username,
+        u1_0.name,
+        u1_0.password,
+        u1_0.token,
+        u1_0.token_expired_at 
+    from
+        users u1_0 
+    where
+        u1_0.token=? 
+    limit
+        ?
+2024-07-04T15:10:14.346+07:00  INFO 10760 --- [restful-jpa] [    Test worker] s.r.resolver.UserArgumentResolver        : Finish resolving user Test
+2024-07-04T15:10:14.385+07:00  INFO 10760 --- [restful-jpa] [    Test worker] s.restful_jpa.controller.UserController  : start service Updating request: UpdateUserRequest(name=Febyk, password=qwerty)
+2024-07-04T15:10:14.386+07:00  INFO 10760 --- [restful-jpa] [    Test worker] s.restful_jpa.controller.UserController  : start service Updating user: Test
+2024-07-04T15:10:14.387+07:00  INFO 10760 --- [restful-jpa] [    Test worker] s.restful_jpa.service.UserService        : start validation user test
+2024-07-04T15:10:14.388+07:00  INFO 10760 --- [restful-jpa] [    Test worker] s.restful_jpa.service.UserService        : request request UpdateUserRequest(name=Febyk, password=qwerty)
+2024-07-04T15:10:14.485+07:00  INFO 10760 --- [restful-jpa] [    Test worker] s.restful_jpa.service.UserService        : Validation Success
+2024-07-04T15:10:14.486+07:00  INFO 10760 --- [restful-jpa] [    Test worker] s.restful_jpa.service.UserService        : Finish save user Febyk
+Hibernate: 
+    update
+        users 
+    set
+        name=?,
+        password=?,
+        token=?,
+        token_expired_at=? 
+    where
+        username=?
+Hibernate: 
+    select
+        u1_0.username,
+        u1_0.name,
+        u1_0.password,
+        u1_0.token,
+        u1_0.token_expired_at 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
