@@ -1,40 +1,41 @@
 ### Login User
-POST http://localhost:8080/api/auth/login
+#POST https://api-generator-cv.onrender.com/api/auth/login
+POST https://api-generator-cv.onrender.com/api/auth/login
 Content-Type: application/json
 
 {
   "username" : "feals",
-  "password" : "qwerty"
+  "password" : "Jakarta2001!@"
 }
 
 ### Logout
-DELETE http://localhost:8080/api/auth/logout
+DELETE https://api-generator-cv.onrender.com/api/auth/logout
 Content-Type: application/json
 X-API-TOKEN: d1ff397d-a8b3-4beb-b341-a8c8596fb353
 
 {}
 
 ### Register User
-POST http://localhost:8080/api/users
+POST https://api-generator-cv.onrender.com/api/users
 Content-Type: application/json
 
 {
   "username" : "feals",
-  "password" : "qwerty",
-  "email" : "fe@gmail.com"
+  "password" : "Jakarta2001!@",
+  "email" : "febyalexsatria@gmail.com"
 }
 
 ### Get User
-GET http://localhost:8080/api/users/current
+GET https://api-generator-cv.onrender.com/api/users/current
 Content-Type: application/json
-X-API-TOKEN: e4de07fa-c845-4c0f-beda-ce5567e11e7a
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 {}
 
 ### Create detail user
-POST http://localhost:8080/api/user/detail
+POST https://api-generator-cv.onrender.com/api/user/detail
 Content-Type: application/json
-X-API-TOKEN: e4de07fa-c845-4c0f-beda-ce5567e11e7a
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 {
   "firstName" : "Febyk",
@@ -46,17 +47,17 @@ X-API-TOKEN: e4de07fa-c845-4c0f-beda-ce5567e11e7a
 }
 
 ### Get detail user
-http://localhost:8080/api/user/detail
+https://api-generator-cv.onrender.com/api/user/detail
 Content-Type: application/json
-X-API-TOKEN: e4de07fa-c845-4c0f-beda-ce5567e11e7a
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 {
 }
 
 ### Update detail user
-PUT http://localhost:8080/api/user/detail
+PUT https://api-generator-cv.onrender.com/api/user/detail
 Content-Type: application/json
-X-API-TOKEN: e4de07fa-c845-4c0f-beda-ce5567e11e7a
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 {
   "firstName" : "Febyk",
@@ -68,85 +69,88 @@ X-API-TOKEN: e4de07fa-c845-4c0f-beda-ce5567e11e7a
 }
 
 ### Get social media
-GET http://localhost:8080/api/socials
+GET https://api-generator-cv.onrender.com/api/socials
 Content-Type: application/json
-X-API-TOKEN: e4de07fa-c845-4c0f-beda-ce5567e11e7a
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 {
 }
 
 ### Create social media
-POST http://localhost:8080/api/socials
+POST https://api-generator-cv.onrender.com/api/socials
 Content-Type: application/json
-X-API-TOKEN: e4de07fa-c845-4c0f-beda-ce5567e11e7a
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 [
   {
-    "platform" : "fb",
-    "username" : "febykaleksatria"
-  },
-  {
-    "platform" : "ig",
-    "username" : "febykas"
+    "platform" : "instagram",
+    "username" : "febyk.as"
   }
 ]
 
 ###Update social media
-PUT http://localhost:8080/api/socials
+PUT https://api-generator-cv.onrender.com/api/socials
 Content-Type: application/json
-X-API-TOKEN: e4de07fa-c845-4c0f-beda-ce5567e11e7a
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 [
 {
-  "id" : "8cb2b113-28f2-47a2-90cf-4cf94e93bea8",
-  "platform" : "fb",
-  "username" : "febykaleksatria"
-},
-{
-  "id" : "8e6d71d5-ddfa-4e52-92b6-1dcb40422dec",
-  "platform" : "ig",
-  "username" : "febykas",
-  "url" : "https"
+  "id" : "bd1ab19c-0bb0-4a50-8c69-70c8bd3ea48a",
+  "platform" : "instagram",
+  "username" : "febyk.as",
+  "url" : "https://www.instagram.com/febyk.as/"
 }
 ]
 
 ###Delete social media
-DELETE http://localhost:8080/api/socials/c44913c8-9daa-4a72-8e23-ad50231346df
+DELETE https://api-generator-cv.onrender.com/api/socials/c44913c8-9daa-4a72-8e23-ad50231346df
 Content-Type: application/json
-X-API-TOKEN: e4de07fa-c845-4c0f-beda-ce5567e11e7a
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 {
 
 }
 
 ### Get skill
-GET http://localhost:8080/api/skills
+GET https://api-generator-cv.onrender.com/api/skills
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 {
 }
 
 ### Create skill
-POST http://localhost:8080/api/skills
+POST https://api-generator-cv.onrender.com/api/skills
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 [
   {
-    "skill" : "game",
-    "level" : "jago"
+    "skill" : "React/Next Js",
+    "level" : "advanced"
   },
   {
-    "skill" : "programmer",
-    "level" : "jago ++"
+    "skill" : "Node Js",
+    "level" : "advanced"
+  },
+  {
+    "skill" : "Laravel",
+    "level" : "advanced"
+  },
+  {
+    "skill" : "Flutter",
+    "level" : "advanced"
+  },
+  {
+    "skill" : "Springboot",
+    "level" : "advanced"
   }
 ]
 
 ### Update skill
-PUT http://localhost:8080/api/skills
+PUT https://api-generator-cv.onrender.com/api/skills
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 [
   {
@@ -162,24 +166,24 @@ X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
 ]
 
 ### Delete skill
-DELETE http://localhost:8080/api/skills/f3b5df55-cc63-42ae-9e5a-27360bef62f6
+DELETE https://api-generator-cv.onrender.com/api/skills/f3b5df55-cc63-42ae-9e5a-27360bef62f6
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 
 
 ### Get achieve
-GET http://localhost:8080/api/achieves
+GET https://api-generator-cv.onrender.com/api/achieves
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 {
 }
 
 ### Create achieve
-POST http://localhost:8080/api/achieves
+POST https://api-generator-cv.onrender.com/api/achieves
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 [
   {
@@ -193,9 +197,9 @@ X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
 ]
 
 ### Update achieve
-PUT http://localhost:8080/api/achieves
+PUT https://api-generator-cv.onrender.com/api/achieves
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 [
   {
@@ -206,24 +210,24 @@ X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
 ]
 
 ### Delete achieve
-DELETE http://localhost:8080/api/achieves/e65d669e-ef24-4bc1-8e07-1af127cc1d14
+DELETE https://api-generator-cv.onrender.com/api/achieves/e65d669e-ef24-4bc1-8e07-1af127cc1d14
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 
 
 ### Get language
-GET http://localhost:8080/api/languages
+GET https://api-generator-cv.onrender.com/api/languages
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 {
 }
 
 ### Create language
-POST http://localhost:8080/api/languages
+POST https://api-generator-cv.onrender.com/api/languages
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 [
   {
@@ -237,51 +241,51 @@ X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
 ]
 
 ### Update language
-PUT http://localhost:8080/api/languages
+PUT https://api-generator-cv.onrender.com/api/languages
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 [
   {
-    "id" : "21759f89-c7f4-4dd4-9cb2-d43c2f89e17f",
+    "id" : "98dc8f5a-24d2-4bb5-a8e0-07f6f8b63ea3",
     "language" : "English",
     "level" : "passive"
   }
 ]
 
 ### Delete language
-DELETE http://localhost:8080/api/languages/21759f89-c7f4-4dd4-9cb2-d43c2f89e17f
+DELETE https://api-generator-cv.onrender.com/api/languages/21759f89-c7f4-4dd4-9cb2-d43c2f89e17f
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 
 
 ### Get education
-GET http://localhost:8080/api/educations
+GET https://api-generator-cv.onrender.com/api/educations
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 {
 }
 
 ### Create education
-POST http://localhost:8080/api/educations
+POST https://api-generator-cv.onrender.com/api/educations
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 [
   {
-    "school" : "UNSRI",
-    "startDate" : "2018-04-11",
-    "endDate" : "2022-04-11",
-    "major" : "IT",
+    "school" : "Sriwijaya University",
+    "startDate" : "2018-08-01",
+    "endDate" : "2022-07-01",
+    "major" : "Teknik Informatika",
     "gpa" : 3.62,
     "desc" : "Kuliah"
   },
   {
     "school" : "SMA N 1",
-    "startDate" : "2015-04-11",
-    "endDate" : "2018-04-11",
+    "startDate" : "2015-07-01",
+    "endDate" : "2018-04-01",
     "major" : "MIPA",
     "gpa" : 90,
     "desc" : "Sekolah"
@@ -289,9 +293,9 @@ X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
 ]
 
 ### Update education
-PUT http://localhost:8080/api/educations
+PUT https://api-generator-cv.onrender.com/api/educations
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 [
   {
@@ -306,25 +310,25 @@ X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
 ]
 
 ### Delete education
-DELETE http://localhost:8080/api/educations/e15018b3-e3ba-4f04-b4a5-37e065441b5d
+DELETE https://api-generator-cv.onrender.com/api/educations/e15018b3-e3ba-4f04-b4a5-37e065441b5d
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 
 
 
 ### Get organization
-GET http://localhost:8080/api/organizations
+GET https://api-generator-cv.onrender.com/api/organizations
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 {
 }
 
 ### Create organization
-POST http://localhost:8080/api/organizations
+POST https://api-generator-cv.onrender.com/api/organizations
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 [
   {
@@ -338,15 +342,15 @@ X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
     "organization" : "HMIF",
     "startDate" : "2015-04-11",
     "endDate" : "2018-04-11",
-    "title" : "WAKADIV",
+    "title" : "Deputy Division Head Kajian Strategi",
     "desc" : "himpunan"
   }
 ]
 
 ### Update organization
-PUT http://localhost:8080/api/organizations
+PUT https://api-generator-cv.onrender.com/api/organizations
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 [
   {
@@ -360,46 +364,46 @@ X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
 ]
 
 ### Delete organization
-DELETE http://localhost:8080/api/organizations/1bd49438-2ab5-4d62-973b-7b0f5151e57e
+DELETE https://api-generator-cv.onrender.com/api/organizations/1bd49438-2ab5-4d62-973b-7b0f5151e57e
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 
 
 ### Get experience
-GET http://localhost:8080/api/experiences
+GET https://api-generator-cv.onrender.com/api/experiences
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 {
 }
 
 ### Create experience
-POST http://localhost:8080/api/experiences
+POST https://api-generator-cv.onrender.com/api/experiences
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 [
   {
-    "company" : "KISEL",
+    "company" : "KISEL Group",
     "startDate" : "2018-04-11",
     "endDate" : "2022-04-11",
     "title" : "STAFF",
     "desc" : "Staff Developer"
   },
   {
-    "company" : "HANA",
+    "company" : "HANA Bank",
     "startDate" : "2015-04-11",
     "endDate" : "2018-04-11",
-    "title" : "ASMEN",
+    "title" : "Asisten Manager Service Interface",
     "desc" : "ASMEN Interface"
   }
 ]
 
 ### Update experience
-PUT http://localhost:8080/api/experiences
+PUT https://api-generator-cv.onrender.com/api/experiences
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 [
   {
@@ -413,9 +417,9 @@ X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
 ]
 
 ### Delete experience
-DELETE http://localhost:8080/api/experiences/7e6b5b54-b1af-450e-bb79-91e41dd993ec
+DELETE https://api-generator-cv.onrender.com/api/experiences/7e6b5b54-b1af-450e-bb79-91e41dd993ec
 Content-Type: application/json
-X-API-TOKEN: 766dd192-4405-4b81-9ece-09faa68481ff
+X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
 
 
 
