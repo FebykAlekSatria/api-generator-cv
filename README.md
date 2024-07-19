@@ -1,5 +1,4 @@
 ### Login User
-#POST https://api-generator-cv.onrender.com/api/auth/login
 POST https://api-generator-cv.onrender.com/api/auth/login
 Content-Type: application/json
 
