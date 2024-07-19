@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
   "username" : "feals",
-  "password" : "Jakarta2001!@"
+  "password" : "Jhjdfhjdf"
 }
 
 ### Logout
@@ -20,8 +20,8 @@ Content-Type: application/json
 
 {
   "username" : "feals",
-  "password" : "Jakarta2001!@",
-  "email" : "febyalexsatria@gmail.com"
+  "password" : "Jhjdfhjdf",
+  "email" : "example@gmail.com"
 }
 
 ### Get User
@@ -41,7 +41,7 @@ X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
   "lastName" : "Alek Satria",
   "city" : "Jakarta",
   "country" : "Indonesia",
-  "phone" : "081373107544",
+  "phone" : "086473538367",
   "about" : "saya programmer"
 }
 
@@ -63,7 +63,7 @@ X-API-TOKEN: 994867da-40b8-452d-97bd-012c8ea82521
   "lastName" : "Alek Satria",
   "city" : "Jakarta",
   "country" : "Indonesia",
-  "phone" : "081373107544",
+  "phone" : "086473538367",
   "about" : "programmer"
 }
 
